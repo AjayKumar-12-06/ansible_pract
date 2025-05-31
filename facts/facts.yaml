@@ -1,6 +1,6 @@
 - name: Gethring facts
   hosts: web
-  become:yes
+  become: yes
   tasks:
     - name: Gethring facts
       ansible.builtin.debug:
