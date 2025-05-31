@@ -1,2 +1,2 @@
-COURSE = "DEvops"
-DURATION = 123hrs
+COURSE: "DEvops"
+DURATION: 123hrs
