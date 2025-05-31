@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Now going to Installing nginx
-    anisble.builtin.package:
+    ansible.builtin.package:
       name: nginx
       state: present
   - name: started nginx
