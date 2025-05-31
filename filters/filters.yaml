@@ -7,4 +7,9 @@
       course: "Distonary kshadbjf"
     ansible.builtin.debug:
       msg: "{{ course | upper }}"
-      
+
+  - name: using filters
+    vars:
+      course: "Distonary kshadbjf"
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"   
