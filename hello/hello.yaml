@@ -1,7 +1,7 @@
-- name: hello world
+- name: printing hello world
   hosts: web
   become: yes
   tasks:
-    -name: priniting hello world
+  - name: priniting hello world
     ansible.builtin.debug:
       msg: "Hello world"
