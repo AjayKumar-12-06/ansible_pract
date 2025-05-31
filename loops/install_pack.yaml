@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: loops with installing packages
-    ansible.builtin.packages:
+    ansible.builtin.package:
       name: "{{ item }}"
-      state: present
-    loops:
+      state: installed
+    loop:
       - gcc
       - java
       - mysql
