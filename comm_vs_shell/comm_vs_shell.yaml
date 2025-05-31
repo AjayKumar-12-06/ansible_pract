@@ -3,4 +3,7 @@
   become: yes
   tasks:
   - name: command vs shell
+    ansible.builtin.shell: ls -lts > /tmp/output.txt
+  - name: command vs shell
     ansible.builtin.command: ls -lts > /tmp/output.txt
+  
