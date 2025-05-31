@@ -1,7 +1,7 @@
 - name: varibale s from file
   hosts: local
   connection: local
-  vars_file:
+  vars_files:
   - file.yaml
   tasks:  
   - name: vars in fails
