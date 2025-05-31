@@ -1,0 +1,10 @@
+- name: using filters
+  hosts: web
+  become: yes
+  tasks:
+  - name: using filters
+    vars:
+      course: "Distonary kshadbjf"
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
+      
