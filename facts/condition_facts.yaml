@@ -1,0 +1,14 @@
+- name: nginx installing
+  hosts: web
+  become: yes
+  tasks:  
+  - name: installing nginx with condition
+    anisble.builtin.dnf:
+      name: nginx
+      state: present
+    when: ansible_os_family == "RedHat"
+  - name: installing nginx with condition
+    anisble.builtin.apt:
+      name: nginx
+      state: present
+    when: ansible_os_family == "Debian"
