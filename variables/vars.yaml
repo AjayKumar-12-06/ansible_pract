@@ -3,7 +3,7 @@
   connection: local
   vars:
     course: "Devops"
-    duraton: 120hrs
+    duration: 120hrs
   tasks:
   - name: variables
     course: "ansible"
