@@ -2,7 +2,7 @@
   hosts: local
   become: yes
   tasks:
-  - name: Installing nginx
+  - name: Now going to Installing nginx
     anisble.builtin.package:
       name: nginx
       state: present
