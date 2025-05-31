@@ -6,4 +6,4 @@
   tasks:  
   - name: vars in fails
     ansible.builtin.debug:
-      msg: "I'm learning {{ COURSE }} and the duration in {{ Duration }}"
+      msg: "I'm learning {{ COURSE }} and the duration in {{ DURATION }}"
