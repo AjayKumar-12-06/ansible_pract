@@ -1,0 +1,16 @@
+- name: using vars
+  hosts: local
+  connection: local
+  vars:
+    course: "Devops"
+    duraton: 120hrs
+  tasks:
+  - name: variables
+    course: "ansible"
+    duration: 6hrs
+    ansible.builtin.debug:
+        msg: "I'm learning {{ course }} and the course duration is {{ duration }}"
+    
+  - name: vars
+    ansible.builtin.debug:
+      msg: "I'm learning {{ course }} and the course duration is {{ duration }}"
