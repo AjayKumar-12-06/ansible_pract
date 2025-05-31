@@ -1,7 +1,7 @@
-- name: Gathring facts
+- name: Gathering facts
   hosts: web
   become: true
   tasks:
-  - name: Gathring facts
+  - name: Gathering facts
     ansible.builtin.debug:
       var: ansible_facts
