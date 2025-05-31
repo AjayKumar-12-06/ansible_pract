@@ -1,6 +1,6 @@
-- name: Gethring facts
+- name: Gathring facts
   hosts: web
   tasks:
-    - name: Gethring facts
+    - name: Gathring facts
       ansible.builtin.debug:
-        msg: "{{ ansible_facts }}"
+        var: ansible_facts
