@@ -1,0 +1,7 @@
+- name: vars in prompt
+  hosts: local
+  connection: local
+  tasks:
+  - name: vars in prompt
+    ansible.builtin.debug:
+      msg: "i'm learning devops {{ COURSE }} and the course duration is {{ DURATION }}"
