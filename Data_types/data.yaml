@@ -4,16 +4,16 @@
   vars:
     Course: "learning aws devops"
     Duration: 120
-  tools:
-   - aws
-   - jenkins
-   - anmsible
-   - shell script
-  live: true
-  topics:
-    cicd: jenkins
-    automate: shell script
-    configuration: Ansible
+    tools:
+      - aws
+      - jenkins
+      - anmsible
+      - shell script
+    live: true
+    topics:
+      cicd: jenkins
+      automate: shell script
+      configuration: Ansible
   tasks:
   - name: print course
     ansible.builtin.debug:
